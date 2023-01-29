@@ -24,3 +24,4 @@ let ninja = {
 ninja.age = 40;
 ninja.name = 'ryu';
 // ninja.age = '30';
+
