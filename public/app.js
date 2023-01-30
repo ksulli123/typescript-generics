@@ -1,4 +1,22 @@
 "use strict";
+//classes
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes ${this.amount} for ${this.details}`;
+    }
+}
+const inv = new Invoice('mario', 'work on mario website', 250);
+const inv2 = new Invoice('luigi', 'work on luigi website', 350);
+let invoices = [];
+invoices.push(inv);
+invoices.push(inv2);
+inv.client = 'yoshi';
+inv2.amount = 400;
 const anchor = document.querySelector('a');
 // if (anchor?.href){
 //     console.log(anchor?.href);
